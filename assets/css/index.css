@@ -1,0 +1,80 @@
+main {
+  gap: 90px;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  background-position: center center;
+  background-image: url("../images/img2.jpeg");
+}
+
+main h1 {
+  color: white;
+  font-size: 80px;
+}
+
+main .card {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .card-title {
+  margin-bottom: 20px;
+}
+
+main .prayer-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+main .card i {
+  color: goldenrod;
+}
+
+main .prayer-time i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main .prayer-time span {
+  font-size: 1.2em;
+}
+
+.block {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.block-title {
+  color: #333;
+  font-size: 1.25em;
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.block img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لبيك</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/quran.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light py-2 fixed-top">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand fs-2 m-0" href="index.html">لبيك</a>
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="index.html" class="pe-5"
+            ><i class="fa fa-home"></i>الرئيسية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="hajj.html" class="pe-5">
+            <img src="assets/images/hijj.png" alt="" />
+            مناسك الحج
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="amra.html" class="pe-5">
+            <img src="assets/images/amra.png" alt="" />
+            مناسك العمرة
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="azkar.html" class="pe-5">
+            <img src="assets/images/hands.png" alt="" />
+            الأذكار
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tawaf.html" class="pe-5">
+            <img src="assets/images/walk.png" alt="" />
+            الطواف
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="quran.html" class="pe-5">
+            <img src="assets/images/quran.png" alt="" />
+            القران الكريم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="chat.html" class="pe-5">
+            <i class="fa-regular fa-comments"></i>
+            شات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="pe-5">
+            <img src="assets/images/location.png" alt="" />
+            وصلنى
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="pe-5">
+            <img src="assets/images/about.png" alt="" />
+            من نحن
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="pe-5">
+            <i class="fa-regular fa-message"></i>
+            تواصل معنا
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="pe-5">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- azkar -->
+    <section class="content mt-5 pt-4">
+      <aside>
+        <ul id="suras-list" class="suras-list"></ul>
+      </aside>
+
+      <main class="px-4 text-center">
+        <div id="sura-content"></div>
+      </main>
+    </section>
+
+    <!-- js files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/quran.js"></script>
+  </body>
+</html>

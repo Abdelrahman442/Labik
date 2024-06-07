@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لبيك</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand fs-2 m-0" href="index.html">لبيك</a>
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="index.html" class="pe-5"
+            ><i class="fa fa-home"></i>الرئيسية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="hajj.html" class="pe-5">
+            <img src="assets/images/hijj.png" alt="" />
+            مناسك الحج
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="amra.html" class="pe-5">
+            <img src="assets/images/amra.png" alt="" />
+            مناسك العمرة
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="azkar.html" class="pe-5">
+            <img src="assets/images/hands.png" alt="" />
+            الأذكار
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tawaf.html" class="pe-5">
+            <img src="assets/images/walk.png" alt="" />
+            الطواف
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="quran.html" class="pe-5">
+            <img src="assets/images/quran.png" alt="" />
+            القران الكريم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="chat.html" class="pe-5">
+            <i class="fa-regular fa-comments"></i>
+            شات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="pe-5">
+            <img src="assets/images/location.png" alt="" />
+            وصلنى
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="pe-5">
+            <img src="assets/images/about.png" alt="" />
+            من نحن
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="pe-5">
+            <i class="fa-regular fa-message"></i>
+            تواصل معنا
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="pe-5">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- chat -->
+    <section class="about us">
+      <div class="container mt-5">
+        <div class="mb-5">
+          <h1 class="text-center">عنّا</h1>
+          <p class="text-center">
+            نحن نقدم خدمات متعلقة بالأذكار والقرآن الكريم ومناسك الطواف.
+          </p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>الأذكار</h2>
+          <p>
+            نقدم لك مجموعة متنوعة من الأذكار اليومية التي تساعدك على ذكر الله في
+            كل وقت وحين.
+          </p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>القرآن الكريم</h2>
+          <p>
+            نقدم خدمة قراءة القرآن الكريم عبر موقعنا مع إمكانية البحث عن السور
+            والآيات وتفسيرها.
+          </p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>مناسك الطواف</h2>
+          <p>
+            نقدم دليل شامل لمناسك الطواف حول الكعبة، مع شرح لكل خطوة من خطوات
+            الطواف.
+          </p>
+        </div>
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>التذكير بالأوقات المهمة</h2>
+          <p>نقدم خدمة تذكيرك بأوقات الصلاة والأذكار الهامة على مدار اليوم.</p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>الأدعية اليومية</h2>
+          <p>
+            نقدم أدعية يومية مقتبسة من السنة النبوية لمساعدتك في الدعاء والذكر.
+          </p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>دروس ومحاضرات إسلامية</h2>
+          <p>
+            نوفر دروسًا ومحاضرات إسلامية عبر الإنترنت تغطي مواضيع دينية متنوعة.
+          </p>
+        </div>
+
+        <div class="service bg-light mb-3 rounded-3 p-4">
+          <h2>مقالات وفتاوى</h2>
+          <p>
+            ننشر مقالات دينية وفتاوى من علماء موثوقين لمساعدتك في فهم الدين
+            الإسلامي بشكل أفضل.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+  </body>
+</html>

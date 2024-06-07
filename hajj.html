@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لبيك</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/hajj.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand fs-2 m-0" href="index.html">لبيك</a>
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="index.html" class="pe-5"
+            ><i class="fa fa-home"></i>الرئيسية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="hajj.html" class="pe-5">
+            <img src="assets/images/hijj.png" alt="" />
+            مناسك الحج
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="amra.html" class="pe-5">
+            <img src="assets/images/amra.png" alt="" />
+            مناسك العمرة
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="azkar.html" class="pe-5">
+            <img src="assets/images/hands.png" alt="" />
+            الأذكار
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tawaf.html" class="pe-5">
+            <img src="assets/images/walk.png" alt="" />
+            الطواف
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="quran.html" class="pe-5">
+            <img src="assets/images/quran.png" alt="" />
+            القران الكريم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="chat.html" class="pe-5">
+            <i class="fa-regular fa-comments"></i>
+            شات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="pe-5">
+            <img src="assets/images/location.png" alt="" />
+            وصلنى
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="pe-5">
+            <img src="assets/images/about.png" alt="" />
+            من نحن
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="pe-5">
+            <i class="fa-regular fa-message"></i>
+            تواصل معنا
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="pe-5">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <section class="content">
+      <div class="container mt-5">
+        <h1 class="text-center py-3 mb-5">انواع الحج</h1>
+        <div class="row">
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">حج التمتع</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    الإحرام بالعمرة: يبدأ الحاج بالنية والإحرام لأداء العمرة في
+                    أشهر الحج (شوال، ذو القعدة، وأيام من ذو الحجة حتى يوم
+                    التروية). العمرة: عند الوصول إلى مكة، يقوم الحاج بأداء مناسك
+                    العمرة وهي الطواف والسعي والحلق أو التقصير. التحلل من
+                    الإحرام: بعد إتمام العمرة، يتحلل الحاج من الإحرام ويعود
+                    لحياته العادية حتى يوم التروية (8 ذو الحجة). الإحرام بالحج:
+                    في يوم التروية، يحرم الحاج مرة أخرى بنية الحج ويؤدي مناسك
+                    الحج كاملة.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">حج القران</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    الإحرام بالعمرة والحج معاً: ينوي الحاج الإحرام بالعمرة والحج
+                    معاً منذ البداية. العمرة: عند وصوله إلى مكة، يقوم بالطواف
+                    والسعي للعمرة ولا يتحلل من الإحرام. التحلل: يظل الحاج في
+                    إحرامه حتى يوم النحر (10 ذو الحجة) ويؤدي مناسك الحج كاملة.
+                    الهدي: يجب على الحاج المقرن ذبح الهدي (الأضحية).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">حج الإفراد</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    الإحرام بالحج فقط: ينوي الحاج الإحرام بالحج فقط من الميقات.
+                    الحج: عند وصوله إلى مكة، يؤدي الحاج الطواف والسعي للحج ويبقى
+                    في إحرامه حتى يوم النحر (10 ذو الحجة). الهدي: ليس مطلوبًا
+                    منه ذبح الهدي، ولكن إذا ذبح فهو مستحب.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container mt-5">
+        <h1 class="text-center pt-3">مناسك الحج - حج التمتع</h1>
+        <p class="text-center my-5">
+          حج التمتع هو أحد أنواع الحج الذي يجمع فيه الحاج بين العمرة والحج، ولكن
+          مع التحلل بينهما. وإليك تفاصيل مناسك حج التمتع خطوة بخطوة:
+        </p>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">1. الإحرام بالعمرة</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    النية: ينوي الحاج أداء العمرة في أشهر الحج (شوال، ذو القعدة،
+                    وأيام من ذو الحجة حتى يوم التروية). الإحرام: يرتدي الحاج
+                    ملابس الإحرام (إزار ورداء أبيض للرجال، والنساء يلبسن ملابسهن
+                    العادية مع كشف الوجه واليدين). التلبية: يقول الحاج: "لبيك
+                    عمرة" ويبدأ بالتلبية: "لبيك اللهم لبيك، لبيك لا شريك لك
+                    لبيك، إن الحمد والنعمة لك والملك، لا شريك لك".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">2. العمرة</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    الطواف: عند الوصول إلى مكة، يطوف الحاج بالكعبة سبعة أشواط.
+                    الصلاة خلف مقام إبراهيم: يصلي الحاج ركعتين خلف مقام إبراهيم
+                    إن أمكن. السعي: يسعى الحاج بين الصفا والمروة سبعة أشواط.
+                    التحلل من الإحرام: بعد إتمام العمرة، يتحلل الحاج من الإحرام
+                    بالحلق أو التقصير، ويعود لحياته العادية حتى يوم التروية.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">3. الإحرام بالحج</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    الإحرام مرة أخرى: في يوم التروية (8 ذو الحجة)، يحرم الحاج
+                    مرة أخرى بنية الحج ويقول: "لبيك حجاً". التوجه إلى منى: يتوجه
+                    الحاج إلى منى ويقضي يومه هناك بالصلاة والذكر والمبيت.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">يوم عرفة (9 ذو الحجة)</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    التوجه إلى عرفة: بعد شروق الشمس، يتوجه الحاج إلى عرفة ويقضي
+                    اليوم بالدعاء والتضرع إلى الله. خطبة عرفة وصلاة الظهر
+                    والعصر: يستمع الحاج إلى خطبة عرفة ويصلي الظهر والعصر جمعًا
+                    وقصرًا. الوقوف بعرفة: يبقى الحاج في عرفة حتى غروب الشمس.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">5. المبيت في مزدلفة</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    التوجه إلى مزدلفة: بعد غروب الشمس، يتوجه الحاج إلى مزدلفة
+                    ويصلي المغرب والعشاء جمعًا وقصرًا. جمع الجمرات: يجمع الحاج
+                    الجمرات ويبيت في مزدلفة حتى الفجر.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">6. يوم النحر (10 ذو الحجة)</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    رمي جمرة العقبة الكبرى: يرمي الحاج جمرة العقبة الكبرى بسبع
+                    حصيات. ذبح الهدي: يقوم الحاج بذبح الهدي (الأضحية). الحلق أو
+                    التقصير: يحلق الرجال رؤوسهم أو يقصرون شعرهم، وتقصّر النساء
+                    من أطراف شعرهن. التحلل الأصغر: بعد هذه الأعمال، يتحلل الحاج
+                    التحلل الأصغر ويجوز له كل شيء إلا النساء.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">7. طواف الإفاضة</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    العودة إلى مكة: يتوجه الحاج إلى مكة لأداء طواف الإفاضة.
+                    السعي بين الصفا والمروة: يسعى الحاج بين الصفا والمروة إن لم
+                    يكن قد سعى مع طواف القدوم. التحلل الأكبر: بعد طواف الإفاضة،
+                    يتحلل الحاج التحلل الأكبر ويجوز له كل شيء.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">8. أيام التشريق (11-13 ذو الحجة)</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    رمي الجمرات الثلاث: يعود الحاج إلى منى ويرمي الجمرات الثلاث
+                    (الجمرة الصغرى، الجمرة الوسطى، الجمرة الكبرى) في كل يوم من
+                    أيام التشريق. المبيت في منى: يبيت الحاج في منى خلال أيام
+                    التشريق.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div class="flip-card bg-light">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="card-title">9. طواف الوداع</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p class="card-text">
+                    العودة إلى مكة: بعد انتهاء مناسك الحج، يتوجه الحاج إلى مكة
+                    لأداء طواف الوداع. مغادرة مكة: بعد طواف الوداع، يغادر الحاج
+                    مكة. هذه هي مناسك حج التمتع بالتفصيل. يجب على الحاج الالتزام
+                    بالترتيب والأركان لضمان صحة الحج.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+  </body>
+</html>

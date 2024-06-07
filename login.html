@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لبيك</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand fs-2 m-0" href="index.html">لبيك</a>
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="index.html" class="pe-5"
+            ><i class="fa fa-home"></i>الرئيسية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="hajj.html" class="pe-5">
+            <img src="assets/images/hijj.png" alt="" />
+            مناسك الحج
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="amra.html" class="pe-5">
+            <img src="assets/images/amra.png" alt="" />
+            مناسك العمرة
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="azkar.html" class="pe-5">
+            <img src="assets/images/hands.png" alt="" />
+            الأذكار
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tawaf.html" class="pe-5">
+            <img src="assets/images/walk.png" alt="" />
+            الطواف
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="quran.html" class="pe-5">
+            <img src="assets/images/quran.png" alt="" />
+            القران الكريم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="chat.html" class="pe-5">
+            <i class="fa-regular fa-comments"></i>
+            شات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="pe-5">
+            <img src="assets/images/location.png" alt="" />
+            وصلنى
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="pe-5">
+            <img src="assets/images/about.png" alt="" />
+            من نحن
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="pe-5">
+            <i class="fa-regular fa-message"></i>
+            تواصل معنا
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="pe-5">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div>
+      <div
+        class="container d-flex align-items-center justify-content-center min-vh-100"
+      >
+        <div class="card p-4">
+          <h3 class="card-title text-center">مرحباً !</h3>
+          <form id="login-form">
+            <div class="form-group mb-4">
+              <label class="mb-3 fw-bold" for="login-email"
+                >البريد الإلكتروني</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="login-email"
+                placeholder="أدخل البريد الإلكتروني"
+                required
+              />
+            </div>
+            <div class="form-group mb-4">
+              <label class="mb-3 fw-bold" for="login-password"
+                >كلمة المرور</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="login-password"
+                placeholder="أدخل كلمة المرور"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-dark d-block w-100 py-2 mb-3">
+              تسجيل الدخول
+            </button>
+            <div>
+              <p class="text-center">
+                ليس لديك حساب؟
+                <a href="register.html" class="fw-bold">إنشاء حساب</a>
+              </p>
+              <p class="text-center">
+                <a href="#" class="fw-bold">نسيت كلمة المرور؟</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>

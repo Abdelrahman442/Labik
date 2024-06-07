@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+button.navbar-toggler,
+button.navbar-toggler:active {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.sidenav a {
+  padding: 7px 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidenav a img {
+  width: 24px;
+}
+
+.sidenav a:hover {
+  background-color: #57575749;
+}
+
+.sidenav a.closebtn {
+  padding: 10px;
+  background-color: unset;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

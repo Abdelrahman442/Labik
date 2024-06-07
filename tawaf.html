@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لبيك</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/tawaf.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand fs-2 m-0" href="index.html">لبيك</a>
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+          <a href="index.html" class="pe-5"
+            ><i class="fa fa-home"></i>الرئيسية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="hajj.html" class="pe-5">
+            <img src="assets/images/hijj.png" alt="" />
+            مناسك الحج
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="amra.html" class="pe-5">
+            <img src="assets/images/amra.png" alt="" />
+            مناسك العمرة
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="azkar.html" class="pe-5">
+            <img src="assets/images/hands.png" alt="" />
+            الأذكار
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tawaf.html" class="pe-5">
+            <img src="assets/images/walk.png" alt="" />
+            الطواف
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="quran.html" class="pe-5">
+            <img src="assets/images/quran.png" alt="" />
+            القران الكريم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="chat.html" class="pe-5">
+            <i class="fa-regular fa-comments"></i>
+            شات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="pe-5">
+            <img src="assets/images/location.png" alt="" />
+            وصلنى
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="pe-5">
+            <img src="assets/images/about.png" alt="" />
+            من نحن
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="pe-5">
+            <i class="fa-regular fa-message"></i>
+            تواصل معنا
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="pe-5">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main -->
+    <div id="counterContainer" class="counterContainer py-4">
+      <div class="d-flex justify-content-center">
+        <div class="btn-group case-btns" role="group" dir="ltr">
+          <button id="tawaf-btn" class="btn btn-success text-white btn-lg px-5">
+            الطواف
+          </button>
+          <button
+            id="saii-btn"
+            class="btn btn-success text-white btn-lg px-5 active"
+          >
+            السعى
+          </button>
+        </div>
+      </div>
+
+      <div class="counter-block saiiCounter">
+        <div class="container">
+          <div class="counter-container">
+            <div class="counter">
+              <span id="counterValue">0</span>
+              <svg width="100%" height="100%">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="90"
+                  stroke="lightgreen"
+                  stroke-width="10"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <div class="buttons">
+              <button
+                id="incrementBtn"
+                class="btn btn-secondary text-white btn-lg rounded-circle"
+              >
+                <i class="fa fa-plus"></i>
+              </button>
+              <button
+                id="decrementBtn"
+                class="btn btn-secondary text-white btn-lg rounded-circle"
+              >
+                <i class="fa fa-minus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="btns d-flex justify-content-evenly mt-5 pt-5">
+            <button class="btn btn-light px-5 text-dark btn-lg" id="duaBtn">
+              الدعاء
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="duaModal"
+              tabindex="-1"
+              aria-labelledby="duaModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="dua-container">
+                      <div class="dua">
+                        <p><strong>عند الصعود إلى الصفا:</strong></p>
+                        <p>
+                          إن الصفا والمروة من شعائر الله، أبدأ بما بدأ الله به
+                        </p>
+                        <p>
+                          الله أكبر، الله أكبر، الله أكبر، لا إله إلا الله وحده
+                          لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير،
+                          لا إله إلا الله وحده، أنجز وعده، ونصر عبده، وهزم
+                          الأحزاب وحده
+                        </p>
+                        <p>رب اغفر وارحم، إنك أنت الأعز الأكرم</p>
+                      </div>
+                      <div class="dua">
+                        <p><strong>عند السعي بين الصفا والمروة:</strong></p>
+                        <p>اللهم اجعل فيه شفاء وسلامة وعافية</p>
+                        <p>
+                          ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب
+                          النار
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      إغلاق
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-light px-5 text-dark btn-lg" id="manasikBtn">
+              المناسك
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="manasikModal"
+              tabindex="-1"
+              aria-labelledby="manasikModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="content-container">
+                      <div class="step">
+                        <div class="step-title">النية</div>
+                        <div class="step-content">
+                          أنوي السعي بين الصفا والمروة سبعة أشواط تقربًا لله
+                          تعالى.
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">البدء من الصفا</div>
+                        <div class="step-content">
+                          يبدأ الساعي بالصفا ويقرأ قوله تعالى: "إن الصفا والمروة
+                          من شعائر الله" (البقرة: 158).
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">الصعود على الصفا</div>
+                        <div class="step-content">
+                          يصعد الساعي على الصفا حتى يرى الكعبة إن أمكن، ويكبر
+                          ثلاثًا ويقول: "الله أكبر، الله أكبر، الله أكبر، لا إله
+                          إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على
+                          كل شيء قدير".
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">الدعاء عند الصفا</div>
+                        <div class="step-content">
+                          يدعو الله بما شاء، ويكرر التكبير والدعاء ثلاث مرات.
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">السعي بين الصفا والمروة</div>
+                        <div class="step-content">
+                          يسعى الساعي بين الصفا والمروة سبعة أشواط، يبدأ من
+                          الصفا وينتهي بالمروة، وعند الوصول إلى العلم الأخضر
+                          يسرع في السعي (الهرولة) بين العلمين.
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">الدعاء عند المروة</div>
+                        <div class="step-content">
+                          عند الوصول إلى المروة، يصعد عليها ويكبر ثلاثًا ويقول:
+                          "الله أكبر، الله أكبر، الله أكبر، لا إله إلا الله وحده
+                          لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير".
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">إتمام الأشواط السبعة</div>
+                        <div class="step-content">
+                          يستمر الساعي في السعي بين الصفا والمروة حتى يكمل سبعة
+                          أشواط، يبدأ من الصفا وينتهي بالمروة.
+                        </div>
+                      </div>
+                      <div class="step">
+                        <div class="step-title">الدعاء العام خلال السعي</div>
+                        <div class="step-content">
+                          يمكن للساعي أن يدعو بما يشاء من الأدعية خلال السعي بين
+                          الصفا والمروة.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      إغلاق
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/tawaf.js"></script>
+  </body>
+</html>

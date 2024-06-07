@@ -1,0 +1,52 @@
+.counterContainer {
+  height: calc(100vh - 74px);
+  background-size: cover;
+  background-position: center center;
+}
+
+.defult {
+  background-image: url("../images/saii.jpeg");
+}
+
+.bg-1 {
+  background-image: url("../images/tawaf.jpeg");
+}
+.bg-2 {
+  background-image: url("../images/saii.jpeg");
+}
+
+.counter-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 50px);
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  color: white;
+}
+
+.counter svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.buttons {
+  display: flex;
+  gap: 150px;
+}

@@ -1,0 +1,43 @@
+aside {
+  float: right;
+  width: 20%;
+  margin-top: 20px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  overflow-y: scroll;
+}
+
+main {
+  width: 80%;
+  float: right;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+.suras-list {
+  list-style-type: none;
+  padding: 0;
+}
+.sura-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #f8f9fa;
+  border-radius: 5px;
+  background-color: #192d23;
+}
+.sura-item:hover {
+  background-color: #16271eda;
+  cursor: pointer;
+}
+.sura-title {
+  font-weight: bold;
+}
+
+.ayah {
+  line-height: 3;
+}
+
+.active {
+  background-color: #16271eda;
+  color: #fff;
+}
