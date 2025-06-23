@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Load suras data from JSON file
-  $.getJSON("../../data/Quran.json", function (data) {
+  $.getJSON("../../data/quran.json", function (data) {
     var surasList = $("#suras-list");
     // Loop through each sura in the JSON data
     data.forEach(function (sura, index) {
